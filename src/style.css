@@ -76,7 +76,15 @@ ul {
     border-radius: 10px;
     max-width: 600px;
   }
-  
+
+  .Weather {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 30px 50px rgba(65,50,100,.08);
+    color: #878787;
+    font-family: Cerebri-Sans,Helvetica,Arial,sans-serif;
+    padding: 40px;}
+
   .weather-icon {
     height: 64px;
     width: 64px;
