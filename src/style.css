@@ -79,6 +79,7 @@ ul {
 
   .Weather {
     background: #fff;
+    font-family: owners, sans-serif;
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(65,50,100,.08);
     color: #878787;
