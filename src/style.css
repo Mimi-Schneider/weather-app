@@ -32,6 +32,35 @@ ul {
     list-style: none;
   }
 
+
+  .daily-details {
+    font-weight: bold;
+  }
+  
+  .weekly-temps {
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+  .today-weather {
+    font-family: owners, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 300;
+    color: #264653;
+  }
+  
+  .today-icon {
+    color: #e9c46a;
+    font-size: 100px;
+    display: block;
+  }
+  
+  .weekly-icon {
+    color: #220d04;
+    font-size: 18px;
+  }
+  
   .weather-app {
     border: 1px solid #dadde1;
     padding: 15px;
