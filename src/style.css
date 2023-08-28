@@ -110,9 +110,9 @@ ul {
     margin-right: 10px;
   }
   
-  .current-temperature {
-    color: rgb(33, 33, 33);
-    font-size: 30px;
+  .current-temperature strong {
+    color: #023047;
+    font-size: 65px;
     font-weight: 400;
     line-height: 1;
   }
