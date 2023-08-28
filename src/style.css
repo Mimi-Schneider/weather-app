@@ -74,8 +74,9 @@ ul {
   
   .today-icon {
     color: #e9c46a;
-    font-size: 100px;
+    font-size: 75px;
     display: block;
+    margin-right:5px;
   }
   
   .weekly-icon {
