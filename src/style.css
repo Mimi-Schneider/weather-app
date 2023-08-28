@@ -91,6 +91,11 @@ ul {
     max-width: 600px;
   }
 
+  .weather-app-wrapping {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+
   .Weather {
     background: #fff;
     font-family: owners, sans-serif;
