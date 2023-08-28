@@ -46,7 +46,7 @@ ul {
     list-style: none;
   }
 
-  .Find .btn {
+  .find-button{
     background: #023047;
     border: none;
     font-size: 16px;
