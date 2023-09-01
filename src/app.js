@@ -38,7 +38,7 @@ function displayTemperature (response) {
     windElement.innerHTML = response.data.wind.speed;
     feelsElement.innerHTML = Math.round(response.data.temperature.feels_like);
     dateElement.innerHTML = formatDate(response.data.time*1000);
-    iconElement.setAttribute("src",`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png`);
+    iconElement.setAttribute("src",`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`);
 }
 
 let apiKey = "389bf9e2068049a646a1betcf8f0o632";
