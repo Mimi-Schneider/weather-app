@@ -40,8 +40,8 @@ function displayTemperature (response) {
 }
 
 let apiKey = "389bf9e2068049a646a1betcf8f0o632";
-
-let apiUrl =`https://api.shecodes.io/weather/v1/current?query=Salt Lake City&key=${apiKey}&units=imperial`
+let city = "Salt Lake City";
+let apiUrl =`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`
 console.log(apiUrl);
 
 axios.get(apiUrl).then(displayTemperature);
