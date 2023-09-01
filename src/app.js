@@ -49,9 +49,6 @@ function search(city) {
     axios.get(apiUrl).then(displayTemperature);
 }
 
-search("Salt Lake City");
-
-
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
