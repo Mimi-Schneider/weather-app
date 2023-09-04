@@ -1,3 +1,47 @@
+h1{
+  font-family: owners-wide, sans-serif;
+  color:#013c58;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h2{
+font-family: owners, sans-serif;
+font-weight: 400;
+font-style: normal;
+color:#013c58;
+font-weight: 500px;
+font-size: 38px;
+line-height: 40px;
+
+}
+
+h3 {
+  color:#013c58;
+  font-weight: regular;
+  font-size: 25px;
+
+}
+
+body{
+  font-family: owners;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  color: #00537a;
+  font-size: 16px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+  text-transform:capitalize;
+}
+
 .WeatherInfo {
   margin-top: 20px;
 }
@@ -6,52 +50,6 @@
   margin-top: 30px;
   align-items: center;
 }
-
-.temperature-container .active {
-  color:#023047
-  font-weight: bold;
-  cursor: default;
-}
-
-h1{
-    font-family: owners-wide, sans-serif;
-    color:#013c58;
-    font-weight: 700;
-    font-size: 48px;
-}
-
-h2{
-font-family: owners, sans-serif;
- font-weight: 400;
- font-style: normal;
- color:#013c58;
- font-weight: 500px;
- font-size: 38px;
- line-height: 40px;
-  
-}
-
-h3 {
-    color:#013c58;
-    font-weight: regular;
-    font-size: 25px;
-
-}
-
-ul {
-    margin: 0 0 10px;
-    padding: 0;
-  }
-  
-  li {
-    color: #00537a;
-    font-size: 16px;
-    font-weight: 100;
-    height: 19px;
-    line-height: 1;
-    list-style: none;
-    text-transform:capitalize;
-  }
 
   .find-button{
     background: #023047;
@@ -82,13 +80,6 @@ ul {
     font-style: normal;
     font-weight: 300;
     color: #264653;
-  }
-  
-  .today-icon {
-    color: #e9c46a;
-    font-size: 75px;
-    display: block;
-    margin-right:10px;
   }
   
   .weekly-icon {
@@ -130,7 +121,7 @@ ul {
     line-height: 1;
   }
   
-  .units {
+  .weather-container .units {
     position: relative;
     font-size: 16px;
     color: #023047
@@ -143,7 +134,11 @@ ul {
     margin-bottom: 20px;
   }
 
-
+  .weather-container .active {
+    color:#023047
+    font-weight: bold;
+    cursor: default;
+  }
   
   .WeatherForecast {
     text-align: center;
