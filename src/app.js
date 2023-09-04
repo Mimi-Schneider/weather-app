@@ -30,8 +30,10 @@ function formatDate(timestamp) {
     let feelsElement = document.querySelector("#feels");
     let dateElement = document.querySelector("#date");
     let iconElement = document.querySelector("#current-icon");
+
+    fahrenheitTemperature = response.data.temperature.current;
   
-    temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
     humidityElement.innerHTML = response.data.temperature.humidity;
@@ -59,17 +61,18 @@ function formatDate(timestamp) {
   }
   
 function displayCelsiusTemp(event) {
-    event.preventDefault(); 
-    let celsiusTemperature = (59-32)*(5/9);
-    alert(celsiusTemperature);
+    event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = celsiusTemperature;
+    let celsiusTemperature = (fahrenheitTemperature-32)*(5/9);
+    temperatureElement.innerHTML =Math.round(celsiusTemperature);
 }
 
-  search("Salt Lake City");
+  let fahrenheitTemperature = null; 
   
   let form = document.querySelector("form");
   form.addEventListener("submit", handleSubmit);
 
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+  search("Salt Lake City");
