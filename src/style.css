@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+.temperature-container .active {
+  color:#023047
+  font-weight: bold;
+  cursor: default;
+}
+
 h1{
     font-family: owners-wide, sans-serif;
     color:#013c58;
@@ -136,6 +142,8 @@ ul {
     padding-bottom: 30px;
     margin-bottom: 20px;
   }
+
+
   
   .WeatherForecast {
     text-align: center;
@@ -163,3 +171,4 @@ ul {
     margin-left: 10px;
     opacity: 0.6;
   }
+
