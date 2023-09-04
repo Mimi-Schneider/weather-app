@@ -60,7 +60,10 @@ function formatDate(timestamp) {
   
 function displayCelsiusTemp(event) {
     event.preventDefault(); 
-    alert("Link Clicked");
+    let celsiusTemperature = (59-32)*(5/9);
+    alert(celsiusTemperature);
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = celsiusTemperature;
 }
 
   search("Salt Lake City");
