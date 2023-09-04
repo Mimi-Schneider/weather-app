@@ -64,7 +64,13 @@ function displayCelsiusTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
     let celsiusTemperature = (fahrenheitTemperature - 32)*(5/9);
-    temperatureElement.innerHTML =Math.round(celsiusTemperature);
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+function displayFahrenheitTemp(event){
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innherHTML = Math.round(fahrenheitTemperature);
 }
 
   let fahrenheitTemperature = null; 
@@ -74,5 +80,8 @@ function displayCelsiusTemp(event) {
 
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
   search("Salt Lake City");
