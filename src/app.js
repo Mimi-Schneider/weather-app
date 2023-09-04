@@ -63,18 +63,22 @@ function formatDate(timestamp) {
 function displayCelsiusTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
+    fahrenheitLink.class.remove("active");
+    celsiusLink.class.add("active");
     let celsiusTemperature = (fahrenheitTemperature - 32)*(5/9);
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 function displayFahrenheitTemp(event){
     event.preventDefault();
+    
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innherHTML = Math.round(fahrenheitTemperature);
 }
 
   let fahrenheitTemperature = null; 
-  
+  fahrenheitLink.class.add("active");
+  celsiusLink.class.remove("active");
   let form = document.querySelector("form");
   form.addEventListener("submit", handleSubmit);
 
