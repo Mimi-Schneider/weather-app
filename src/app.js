@@ -63,7 +63,7 @@ function formatDate(timestamp) {
 function displayCelsiusTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    let celsiusTemperature = (fahrenheitTemperature-32)*(5/9);
+    let celsiusTemperature = (fahrenheitTemperature - 32)*(5/9);
     temperatureElement.innerHTML =Math.round(celsiusTemperature);
 }
 
