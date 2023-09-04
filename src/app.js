@@ -58,7 +58,15 @@ function formatDate(timestamp) {
     search(cityInputElement.value);
   }
   
+function displayCelsiusTemp(event) {
+    event.preventDefault(); 
+    alert("Link Clicked");
+}
+
   search("Salt Lake City");
   
   let form = document.querySelector("form");
   form.addEventListener("submit", handleSubmit);
+
+  let celsiusLink = document.querySelector("#celsius-link");
+  celsiusLink.addEventListener("click", displayCelsiusTemp);
