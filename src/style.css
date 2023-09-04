@@ -63,6 +63,18 @@ li {
   align-items: center;
 }
 
+.weather-container .active {
+  color:#023047
+  cursor: default;
+}
+
+.current-temperature {
+  color: #023047;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1;
+}
+
 .weather-container .units {
   position: relative;
   font-size: 16px;
@@ -82,27 +94,6 @@ li {
     background:transparent;
     border: 2px solid #023047;
     color:#023047;
-  }
-  
-  
-  .Weather {
-    background: #fff;
-    font-family: owners, sans-serif;
-    border-radius: 16px;
-    box-shadow: 0 30px 50px rgba(65,50,100,.08);
-    color: #878787;
-    padding: 40px;}
-  
-  .current-temperature {
-    color: #023047;
-    font-size: 65px;
-    font-weight: 400;
-    line-height: 1;
-  }
-
-  .weather-container .active {
-    color:#023047
-    cursor: default;
   }
   
   .search-form {
