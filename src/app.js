@@ -60,8 +60,6 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-
-
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
