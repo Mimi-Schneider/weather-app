@@ -121,7 +121,7 @@ li {
     color: rgba(39, 33, 66, 0.4);
   }
   
-  .WeatherForecast .forecast-temperature {
+  .WeatherForecast .forecast-temperature-max {
     font-style: normal;
     font-size: 18px;
     line-height: 1.5;
