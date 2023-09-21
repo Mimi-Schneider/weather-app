@@ -24,11 +24,13 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class ="row">
-  <h4> Next 5 Days </h4>
+  let forecastHTML = ` <div class = "row">`;
+  let days = ["Thur", "Fri", "Sat", "Sun"];
+  days.forEach(function(day){
+    forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class = "WeatherForecastPreview"> 
-    <div class="forecast-time">Day</div>
+    <div class="forecast-time">${day}</div>
 <img src="https://cdn.vectorstock.com/i/1000x1000/97/86/cloud-icon-vector-21679786.webp" 
 alt="" 
 width="36"/>
@@ -38,8 +40,13 @@ width="36"/>
   </div>
   </div>
   </div>
-</div>
 `;
+    
+  })
+
+  
+  
+forecastHTML = forecastHTML+`</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
