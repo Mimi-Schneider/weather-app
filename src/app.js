@@ -21,6 +21,27 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML=`
+  <div class ="row">
+  <h4> Next 5 Days </h4>
+  <div class="col-2">
+  <div class = "WeatherForecastPreview"> 
+    <div class="forecast-time">Day</div>
+<img src="https://cdn.vectorstock.com/i/1000x1000/97/86/cloud-icon-vector-21679786.webp" 
+alt="" 
+width="36"/>
+<div class ="forecast temperature">
+  <span class="forecast-temperature-max">90°</span>
+  <span class = "forecast-temperature-min"> 78°</span>
+  </div>
+  </div>
+  </div>
+</div>
+`;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -86,3 +107,5 @@ let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
 search("Salt Lake City");
+
+displayForecast();
