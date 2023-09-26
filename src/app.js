@@ -41,8 +41,7 @@ width="36"/>
   </div>
   </div>
 `;
-    
-  }
+})
   
 forecastHTML = forecastHTML+`</div>`;
   forecastElement.innerHTML = forecastHTML;
