@@ -21,11 +21,11 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
-
-  let forecastHTML = ` <div class = "row">`;
   let days = ["Wed", "Thur", "Fri", "Sat", "Sun"];
+  let forecastHTML = ` <div class = "row">`;
   days.forEach(function(day){
     forecastHTML = forecastHTML + `
   <div class="col-2">
@@ -45,6 +45,13 @@ width="36"/>
   
 forecastHTML = forecastHTML+`</div>`;
   forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates){
+  console.log(coordinates);
+  let apiKey = "389bf9e2068049a646a1betcf8f0o632";
+  let apiUrl =`https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`
+axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -71,10 +78,12 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.icon);
+
+  getForecast(response.data.coordinates);
 }
 
 function search(city) {
-  let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
+  let apiKey = "389bf9e2068049a646a1betcf8f0o632";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayTemperature);
