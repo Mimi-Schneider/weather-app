@@ -30,7 +30,7 @@ function displayForecast(response) {
   <div class="col-2">
   <div class = "WeatherForecastPreview"> 
     <div class="forecast-time">${forecastDay.time}</div>
-<img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${condition.icon}.png" 
+<img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png" 
 alt="" 
 width="36"/>
 <div class ="forecast temperature">
