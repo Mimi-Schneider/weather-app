@@ -34,6 +34,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = ` <div class = "row">`;
   forecast.forEach(function(forecastDay, index){
+    if (index < 6) {
     forecastHTML = 
       forecastHTML + 
       `
@@ -41,7 +42,6 @@ function displayForecast(response) {
     <div class = "WeatherForecastPreview" >
     <div class = "forecast-time"> ${formatDay
     (forecastDay.time)} </div>
-    ${index}
 
 <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png" 
 alt="" 
@@ -54,6 +54,7 @@ width="36"/>
   </div>
 
 `;
+    }
 })
   
 forecastHTML = forecastHTML+`</div>`;
